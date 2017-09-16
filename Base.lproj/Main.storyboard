@@ -35,8 +35,14 @@
                                     <action selector="showFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ku5-Vk-BaF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w7y-PQ-Ge8">
+                                <rect key="frame" x="36" y="142" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are born with 300 bones; by the time you are an adult you will have 206." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4B-c5-Eeh">
-                                <rect key="frame" x="36" y="313" width="303" height="80"/>
+                                <rect key="frame" x="36" y="293" width="303" height="80"/>
                                 <color key="tintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="WFA-zK-svz"/>
@@ -51,11 +57,13 @@
                             <constraint firstItem="H4B-c5-Eeh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="28u-I2-ggM"/>
                             <constraint firstItem="H4B-c5-Eeh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="6x9-Lk-BlG"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4AB-8Y-RLS" secondAttribute="bottom" constant="80" id="BaH-gc-Iok"/>
+                            <constraint firstItem="w7y-PQ-Ge8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="OHD-07-8yb"/>
                             <constraint firstItem="H4B-c5-Eeh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="20" id="Q7w-QA-a3X"/>
+                            <constraint firstItem="w7y-PQ-Ge8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="122" id="QVc-EV-VOQ"/>
                             <constraint firstItem="H4B-c5-Eeh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="T5v-mL-Hnz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4AB-8Y-RLS" secondAttribute="trailing" constant="20" id="hzZ-EW-7Sk"/>
                             <constraint firstItem="H4B-c5-Eeh" firstAttribute="centerX" secondItem="4AB-8Y-RLS" secondAttribute="centerX" id="ldA-WT-72o"/>
-                            <constraint firstItem="H4B-c5-Eeh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="293" id="m3H-BE-upW"/>
+                            <constraint firstItem="H4B-c5-Eeh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="273" id="m3H-BE-upW"/>
                             <constraint firstItem="H4B-c5-Eeh" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="20" id="nRm-jh-SGo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="H4B-c5-Eeh" secondAttribute="trailing" constant="20" id="vLP-kX-pma"/>
                             <constraint firstItem="4AB-8Y-RLS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="zCe-jc-1bb"/>
@@ -70,12 +78,13 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="funFactButton" destination="4AB-8Y-RLS" id="mCj-aI-G34"/>
                         <outlet property="funFactLabel" destination="H4B-c5-Eeh" id="JaA-kV-nMR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+            <point key="canvasLocation" x="772" y="-84"/>
         </scene>
     </scenes>
 </document>
